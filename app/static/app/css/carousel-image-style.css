@@ -1,0 +1,5 @@
+.carousel-item img.carousel-image-style {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}

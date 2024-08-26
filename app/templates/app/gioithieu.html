@@ -1,0 +1,66 @@
+{%  extends 'app/base.html' %}
+{% load static %}
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        {% block register %}
+        <from>
+            <link href="{%static 'app/css/cssmoi/footer.css' %}" rel="stylesheet" />
+            <link href="{%static 'app/css/cssmoi/gioithieu.css' %}" rel="stylesheet" />
+            <link href="{%static 'app/css/cssmoi/header.css' %}" rel="stylesheet" />
+            <link href="{%static 'app/css/cssmoi/style.css' %}" rel="stylesheet" />
+            <link href="{%static 'app/css/cssmoi/taikhoan.css' %}" rel="stylesheet" />
+            <link href="{%static 'app/css/cssmoi/topnav.css' %}" rel="stylesheet" />
+        <script> addTopNav();</script>
+
+        <section style="min-height: 85vh">
+            <script> addHeader(); </script>
+    
+            <div class="page-gt">
+                <h4 class="page-header">
+                    Giới thiệu
+                </h4>
+                <div class="page-info">
+                    <p>Chào mừng đến với trang web bán laptop - điểm đến hàng đầu cho những người đam mê công nghệ và tìm kiếm sự hoàn hảo trong laptop của mình!
+                    </p>
+                    <br />
+                    <p>
+                        Tại đây, chúng tôi tự hào là điểm đến đáng tin cậy cho những ai đang tìm kiếm các sản phẩm công nghệ cao cấp với sự đa dạng, 
+                        chất lượng và dịch vụ tốt nhất. Với một bộ sưu tập đa dạng của các thương hiệu hàng đầu như Apple, Dell, HP và nhiều hơn nữa, 
+                        chúng tôi cam kết mang lại sự lựa chọn đa dạng để phù hợp với mọi nhu cầu và ngân sách.<br />
+                        chúng tôi không chỉ cung cấp sản phẩm, mà còn làm việc chăm sóc khách hàng một cách tận tâm. 
+                        Đội ngũ chuyên nghiệp của chúng tôi luôn sẵn lòng hỗ trợ và tư vấn để giúp bạn chọn lựa sản phẩm phù hợp nhất.<br />
+                        Để nâng cao thương hiệu của mình, mục tiêu của chúng tôi trong thời gian tới là cung cấp đến tận
+                        tay khách hàng những sản phẩm chính hãng với chất lượng đảm bảo và uy tín cũng như giá cả hợp lý
+                        nhất.<br />
+                        Chúng tôi mong muốn sự đóng góp của khách hàng sẽ giúp chúng tôi ngày một phát triển để từ đó củng
+                        cố thêm lòng tin của khách hàng với chúng tôi. Chúng tôi rất biết ơn sự tin tưởng của khách hàng
+                        trong suốt thời gian qua qua và chúng tôi luôn tâm niệm rằng cần phải cố gắng hơn nữa để xứng đáng với
+                        phương châm đề ra “Nếu những gì chúng tôi không có, nghĩa là bạn không cần .<br />
+                        Chúng tôi xin chân thành cảm ơn tất cả các khách hàng đã, đang và sẽ ủng hộ chúng tôi.
+                    </p>
+                </div>
+            </div>
+        </section>
+    
+        <script> addContainTaiKhoan(); </script>
+    
+        <div class="footer">
+            <script>addFooter();</script>
+            
+        </div>
+    
+        <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+    </from>
+        {% endblock register %}
+    </body>
+</html>
